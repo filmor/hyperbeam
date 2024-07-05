@@ -4,10 +4,8 @@ defmodule Hyperbeam.Mixfile do
   def project do
     [
       app: :hyperbeam,
-      compilers: [:rustler] ++ Mix.compilers(),
       version: "0.1.0",
       elixir: "~> 1.9",
-      rustler_crates: [hyperbeam: []],
       start_permanent: Mix.env == :prod,
       deps: deps()
     ]
